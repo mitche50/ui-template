@@ -1,8 +1,8 @@
 import { Grid, IconButton, makeStyles } from '@material-ui/core';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { StoreContext } from 'mobx/stores/store-context';
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const useStyles = makeStyles({
   menuIcon: {

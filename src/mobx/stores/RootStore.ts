@@ -1,5 +1,6 @@
 import { makeObservable } from 'mobx';
 import { RouterStore } from 'mobx-router';
+
 import UiStateStore from './UiStore';
 
 export class RootStore {

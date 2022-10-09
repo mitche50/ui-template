@@ -18,14 +18,6 @@ const useStyles = makeStyles({
   },
 });
 
-// const getRootPath = (path: string) => '/';
-
-// const routeTabMapping = new Map(
-//   Object.entries({
-//     [getRootPath(routes.home.path)]: 0,
-//   }),
-// );
-
 export const NavbarTabs = observer((): JSX.Element => {
   const { router } = useContext(StoreContext);
   const [selectedTab, setSelectedTab] = useState(0);
@@ -35,7 +27,7 @@ export const NavbarTabs = observer((): JSX.Element => {
     router.goTo(route, {});
   };
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const handleChange = (event: React.ChangeEvent<unknown>, newValue: number) => {
     setSelectedTab(newValue);
   };
 

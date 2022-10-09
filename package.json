@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "codegen:contracts": "typechain --target ethers-v5 --out-dir src/contracts src/abi/*.abi",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +55,10 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3"
   }

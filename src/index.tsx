@@ -1,21 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { App } from 'components/App';
+import { theme } from 'config/ui/themes/default';
 import { StoreProvider } from 'mobx/stores/store-context';
 import { startRouter } from 'mobx-router';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
-
-import { App } from 'components/App';
-import routes from './config/routes';
-import store from './mobx/stores/RootStore';
-import { theme } from 'config/ui/themes/default';
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiConfig } from 'wagmi';
-import { wagmiClient, chains } from './config/wallet';
+
+import routes from './config/routes';
+import { chains, wagmiClient } from './config/wallet';
+import store from './mobx/stores/RootStore';
 
 startRouter(routes, store, {
   html5history: true,

@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { StoreContext } from 'mobx/stores/store-context';
 import { MobxRouter } from 'mobx-router';
-import Sidebar from './Sidebar';
+import React, { useContext } from 'react';
+
 import Navbar from './Navbar';
+import Sidebar from './Sidebar';
 
 const useStyles = makeStyles((theme) => ({
   rootContainer: {

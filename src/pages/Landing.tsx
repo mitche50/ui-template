@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { observer } from 'mobx-react-lite';
 import clsx from 'clsx';
-
-import { LayoutContainer } from '../components/common/Containers';
-import { useAccount, useContractRead, useNetwork } from 'wagmi';
-import { toast } from 'react-toastify';
-import ERC20abi from '../abi/ERC20.json';
-import { contracts as goerliContracts } from 'config/Networks/Goerli/contracts';
 import { contracts as mainnetContracts } from 'config/Networks/Ethereum/contracts';
+import { contracts as goerliContracts } from 'config/Networks/Goerli/contracts';
 import { BigNumber } from 'ethers';
 import { formatEther } from 'ethers/lib/utils';
+import { observer } from 'mobx-react-lite';
+import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
+import { useAccount, useContractRead, useNetwork } from 'wagmi';
+
+import ERC20abi from '../abi/ERC20.json';
+import { LayoutContainer } from '../components/common/Containers';
 
 const useStyles = makeStyles({
   root: {

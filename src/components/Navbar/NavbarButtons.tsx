@@ -1,7 +1,6 @@
 import { Grid, makeStyles } from '@material-ui/core';
-import React from 'react';
-
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import React from 'react';
 
 const useStyles = makeStyles({
   root: {

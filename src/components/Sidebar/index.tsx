@@ -5,10 +5,11 @@ import routes from 'config/routes';
 import { StoreContext } from 'mobx/stores/store-context';
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
+
 import Menu from '../common/Menu';
 import MenuItem from '../common/MenuItem';
-import MenuItemText from '../common/MenuItemText';
 import MenuItemIcon from '../common/MenuItemIcon';
+import MenuItemText from '../common/MenuItemText';
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
