@@ -12,68 +12,68 @@ import MenuItemIcon from '../common/MenuItemIcon';
 import MenuItemText from '../common/MenuItemText';
 
 const useStyles = makeStyles((theme) => ({
-  drawerPaper: {
-    background: '#3a3a3a',
-    [theme.breakpoints.down('sm')]: {
-      width: 315,
+    drawerPaper: {
+        background: '#3a3a3a',
+        [theme.breakpoints.down('sm')]: {
+            width: 315,
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: 291,
+        },
     },
-    [theme.breakpoints.down('xs')]: {
-      width: 291,
+    socialsContainer: {
+        display: 'flex',
+        justifyContent: 'flex-start',
+        marginTop: theme.spacing(2),
+        marginBottom: theme.spacing(1),
+        paddingLeft: 16,
     },
-  },
-  socialsContainer: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(1),
-    paddingLeft: 16,
-  },
-  socialIcon: {
-    height: 14,
-    width: 14,
-    cursor: 'pointer',
-    marginRight: 8,
-  },
+    socialIcon: {
+        height: 14,
+        width: 14,
+        cursor: 'pointer',
+        marginRight: 8,
+    },
 }));
 
 const Sidebar = observer(() => {
-  const classes = useStyles();
-  const store = useContext(StoreContext);
-  const {
-    uiState: { sidebarOpen, closeSidebar },
-  } = store;
+    const classes = useStyles();
+    const store = useContext(StoreContext);
+    const {
+        uiState: { sidebarOpen, closeSidebar },
+    } = store;
 
-  return (
-    <Drawer
-      variant="temporary"
-      anchor="left"
-      open={sidebarOpen}
-      onClose={() => closeSidebar()}
-      classes={{
-        paper: classes.drawerPaper,
-      }}
-      ModalProps={{
-        keepMounted: true, // Better open performance on mobile.
-      }}
-      disableEnforceFocus
-    >
-      <Menu disablePadding>
-        <MenuItem>
-          <MenuItemText>
-            <Typography variant="h5">Menu</Typography>
-          </MenuItemText>
-          <MenuItemIcon>
-            <IconButton onClick={() => closeSidebar()}>
-              <CloseIcon />
-            </IconButton>
-          </MenuItemIcon>
-        </MenuItem>
-        <MenuItem button onClick={() => store.router.goTo(routes.home)}>
-          Home
-        </MenuItem>
-      </Menu>
-    </Drawer>
-  );
+    return (
+        <Drawer
+            variant="temporary"
+            anchor="left"
+            open={sidebarOpen}
+            onClose={() => closeSidebar()}
+            classes={{
+                paper: classes.drawerPaper,
+            }}
+            ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+            }}
+            disableEnforceFocus
+        >
+            <Menu disablePadding>
+                <MenuItem>
+                    <MenuItemText>
+                        <Typography variant="h5">Menu</Typography>
+                    </MenuItemText>
+                    <MenuItemIcon>
+                        <IconButton onClick={() => closeSidebar()}>
+                            <CloseIcon />
+                        </IconButton>
+                    </MenuItemIcon>
+                </MenuItem>
+                <MenuItem button onClick={() => store.router.goTo(routes.home)}>
+                    Home
+                </MenuItem>
+            </Menu>
+        </Drawer>
+    );
 });
 
 export default Sidebar;
