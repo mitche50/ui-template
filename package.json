@@ -1,65 +1,65 @@
 {
-  "name": "ui-template",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@material-ui/lab": "^4.0.0-alpha.61",
-    "@rainbow-me/rainbowkit": "^0.7.1",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@typechain/ethers-v5": "^10.1.0",
-    "ethers": "^5.7.1",
-    "mobx": "^6.6.2",
-    "mobx-react-lite": "^3.4.0",
-    "mobx-router": "^1.0.0",
-    "prettier": "2.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-toastify": "^9.0.8",
-    "typescript": "^4.8.4",
-    "wagmi": "^0.6.8",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "codegen:contracts": "typechain --target ethers-v5 --out-dir src/contracts src/abi/*.abi",
-    "prepare": "husky install",
-    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-simple-import-sort": "^8.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3"
-  }
+    "name": "ui-template",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.12.4",
+        "@material-ui/icons": "^4.11.3",
+        "@material-ui/lab": "^4.0.0-alpha.61",
+        "@rainbow-me/rainbowkit": "^0.7.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "@typechain/ethers-v5": "^10.1.0",
+        "ethers": "^5.7.1",
+        "mobx": "^6.6.2",
+        "mobx-react-lite": "^3.4.0",
+        "mobx-router": "^1.0.0",
+        "prettier": "2.7.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "5.0.1",
+        "react-toastify": "^9.0.8",
+        "typescript": "^4.8.4",
+        "wagmi": "^0.6.8",
+        "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "codegen:contracts": "typechain --target ethers-v5 --out-dir src/contracts src/abi/*.abi",
+        "prepare": "husky install",
+        "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-simple-import-sort": "^8.0.0",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.0.3"
+    }
 }

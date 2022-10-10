@@ -1,16 +1,16 @@
 {
-  "short_name": "Mitche50 UI Template",
-  "name": "Template for ETH Based React Apps",
-  "icons": [
-    {
-      "src": "logo.png",
-      "sizes": "any",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Mitche50 UI Template",
+    "name": "Template for ETH Based React Apps",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }
